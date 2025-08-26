@@ -4,6 +4,9 @@
 
 This repository contains a **complete step-by-step journey** to understand and build intelligent AI coordination systems using MCP (Model Context Protocol). You'll experience the dramatic transformation from manual model guessing to intelligent coordination.
 
+## 👨‍💻 **About the Author**
+**Varun Kumar Manik** - AWS Community Builder, DevOps Engineer, and AI Trainer with extensive experience in cloud architecture and AI system design. Passionate about making complex AI concepts accessible through hands-on learning experiences. Specializes in bridging the gap between theoretical AI knowledge and practical implementation.
+
 ## 🚀 **Quick Start**
 
 ### **Prerequisites**
