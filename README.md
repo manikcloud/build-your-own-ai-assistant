@@ -4,6 +4,48 @@
 
 This repository contains a **complete step-by-step journey** to understand and build intelligent AI coordination systems using MCP (Model Context Protocol). You'll experience the dramatic transformation from manual model guessing to intelligent coordination.
 
+## 🏗️ **System Architecture**
+
+```mermaid
+graph TB
+    subgraph "🎯 User Interface"
+        A[👤 User Question<br/>Any Topic]
+    end
+    
+    subgraph "🧠 MCP Intelligence Layer"
+        B[📝 Question Analysis<br/>Keyword Detection]
+        C[🎯 Smart Router<br/>Model Selection]
+        D[⚙️ Configuration<br/>smart-mcp.json]
+    end
+    
+    subgraph "🤖 AI Model Pool"
+        E[🌍 phi-fast<br/>Travel & General]
+        F[💻 deepseek-coder<br/>Programming]
+        G[🔬 mistral<br/>Knowledge Base]
+    end
+    
+    A --> B
+    B --> C
+    C --> D
+    D --> C
+    C --> E
+    C --> F
+    C --> G
+    
+    E --> H[✅ Perfect Response]
+    F --> H
+    G --> H
+    
+    style A fill:#e3f2fd
+    style B fill:#f3e5f5
+    style C fill:#f3e5f5
+    style D fill:#fff3e0
+    style E fill:#e8f5e8
+    style F fill:#e8f5e8
+    style G fill:#e8f5e8
+    style H fill:#e8f5e8
+```
+
 ## 🚀 **Quick Start**
 
 ### **Prerequisites**
@@ -53,6 +95,39 @@ python3 smart_chat.py "Explain what machine learning is"
 - ✅ Ask any question → MCP analyzes keywords
 - ✅ Smart routing → Always picks the best AI
 - ✅ Perfect answer → 30 seconds, happy learning
+
+## 🔄 **Before vs After MCP**
+
+```mermaid
+graph TD
+    subgraph "❌ Before MCP - Manual Guessing"
+        A1[👤 User Question] --> B1[🤔 Which AI to use?]
+        B1 --> C1[🎲 Try Random AI]
+        C1 --> D1[🚫 Wrong Answer/Refusal]
+        D1 --> E1[😤 Try Another AI]
+        E1 --> F1[⏰ 10+ Minutes Wasted]
+    end
+    
+    subgraph "✅ After MCP - Smart Routing"
+        A2[👤 User Question] --> B2[🧠 MCP Analysis]
+        B2 --> C2[🎯 Perfect AI Selected]
+        C2 --> D2[✅ Right Answer]
+        D2 --> E2[😊 30 Seconds, Done!]
+    end
+    
+    style A1 fill:#ffebee
+    style B1 fill:#ffebee
+    style C1 fill:#ffebee
+    style D1 fill:#ffebee
+    style E1 fill:#ffebee
+    style F1 fill:#ffebee
+    
+    style A2 fill:#e8f5e8
+    style B2 fill:#f3e5f5
+    style C2 fill:#e8f5e8
+    style D2 fill:#e8f5e8
+    style E2 fill:#e8f5e8
+```
 
 ### **🛠️ What You'll Build**
 

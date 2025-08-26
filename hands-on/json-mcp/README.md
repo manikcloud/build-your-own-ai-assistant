@@ -4,6 +4,29 @@
 
 A simple JSON-based MCP configuration that automatically routes questions to the right models without any programming.
 
+## 🔄 **How It Works**
+
+```mermaid
+flowchart LR
+    A[📝 User Question] --> B{🔍 Keyword Analysis}
+    B -->|travel, trip, plan| C[🌍 phi-fast model]
+    B -->|code, function, debug| D[💻 deepseek-coder model]
+    B -->|explain, what is| E[🔬 mistral model]
+    B -->|no match| F[🎯 default: phi-fast]
+    
+    C --> G[✅ Travel Response]
+    D --> H[✅ Code Response]
+    E --> I[✅ Knowledge Response]
+    F --> J[✅ General Response]
+    
+    style A fill:#e3f2fd
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
+    style D fill:#e8f5e8
+    style E fill:#e8f5e8
+    style F fill:#e8f5e8
+```
+
 ---
 
 ## 📚 **Theory: Understanding Ollama & Large Language Models**
@@ -548,6 +571,33 @@ cat smart_chat.py
 ### **Step 2: Test Smart Model Selection**
 
 **Understanding the Tests:** Each test demonstrates how MCP analyzes question keywords and routes to the appropriate specialized model.
+
+## 🌳 **Decision Tree Logic**
+
+```mermaid
+graph TD
+    A[📝 Incoming Question] --> B{🔍 Contains travel keywords?<br/>trip, plan, visit, vacation}
+    B -->|Yes| C[🌍 Route to phi-fast<br/>Travel Expert]
+    B -->|No| D{💻 Contains coding keywords?<br/>function, code, debug}
+    D -->|Yes| E[💻 Route to deepseek-coder<br/>Programming Expert]
+    D -->|No| F{📚 Contains general keywords?<br/>explain, what is, how to}
+    F -->|Yes| G[🔬 Route to mistral<br/>Knowledge Expert]
+    F -->|No| H[🎯 Default to phi-fast<br/>General Purpose]
+    
+    C --> I[✅ Travel Response]
+    E --> J[✅ Code Response]
+    G --> K[✅ Knowledge Response]
+    H --> L[✅ General Response]
+    
+    style A fill:#e3f2fd
+    style B fill:#f3e5f5
+    style D fill:#f3e5f5
+    style F fill:#f3e5f5
+    style C fill:#e8f5e8
+    style E fill:#e8f5e8
+    style G fill:#e8f5e8
+    style H fill:#e8f5e8
+```
 
 <details>
 <summary><strong>🗺️ Travel Question Test</strong></summary>
