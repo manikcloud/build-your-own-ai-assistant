@@ -20,17 +20,17 @@
 
 ```mermaid
 graph LR
-    subgraph "🤔 The Problem"
-        A[👤 User: Plan a trip to Paris]
-        B[❌ Wrong AI: I only do coding]
-        C[😤 Frustrated User]
+    subgraph Problem["🤔 The Problem"]
+        A["👤 User: Plan a trip to Paris"]
+        B["❌ Wrong AI: I only do coding"]
+        C["😤 Frustrated User"]
     end
     
-    subgraph "✅ MCP Solution"
-        D[👤 User: Plan a trip to Paris]
-        E[🧠 MCP: Travel question detected]
-        F[🌍 Right AI: Here's your itinerary!]
-        G[😊 Happy User]
+    subgraph Solution["✅ MCP Solution"]
+        D["👤 User: Plan a trip to Paris"]
+        E["🧠 MCP: Travel question detected"]
+        F["🌍 Right AI: Here's your itinerary!"]
+        G["😊 Happy User"]
     end
     
     A --> B --> C
@@ -49,7 +49,7 @@ graph LR
 
 ```mermaid
 graph LR
-    A["👤 You Ask:<br/>Plan a trip to Paris"] --> B["🧠 MCP Smart Helper"]
+    A["👤 You Ask: Plan a trip to Paris"] --> B["🧠 MCP Smart Helper"]
     B --> C{"What type of question?"}
     C -->|Travel Keywords| D["🌍 Travel AI Expert"]
     C -->|Code Keywords| E["💻 Coding AI Expert"]
@@ -74,22 +74,22 @@ Imagine you're at a big food court with different restaurants:
 
 ```mermaid
 graph TD
-    subgraph "🏢 Food Court (AI World)"
-        A[👤 You: I want pizza!]
-        B[🤵 Smart Helper<br/>(MCP System)]
+    subgraph FoodCourt["🏢 Food Court - AI World"]
+        A["👤 You: I want pizza!"]
+        B["🤵 Smart Helper - MCP System"]
         
-        subgraph "🍕 Food Restaurants (AI Models)"
-            C[🍕 Pizza Place<br/>(Travel AI)]
-            D[🍣 Sushi Place<br/>(Coding AI)]
-            E[🍔 Burger Place<br/>(Writing AI)]
+        subgraph Restaurants["🍕 Food Restaurants - AI Models"]
+            C["🍕 Pizza Place - Travel AI"]
+            D["🍣 Sushi Place - Coding AI"]
+            E["🍔 Burger Place - Writing AI"]
         end
     end
     
     A --> B
-    B -->|Pizza = Travel question<br/>Go to Pizza Place!| C
+    B -->|Pizza = Travel question Go to Pizza Place!| C
     B -.->|Wrong for pizza| D
     B -.->|Wrong for pizza| E
-    C --> F[😊 Happy with perfect pizza!]
+    C --> F["😊 Happy with perfect pizza!"]
     
     style A fill:#e3f2fd
     style B fill:#f3e5f5

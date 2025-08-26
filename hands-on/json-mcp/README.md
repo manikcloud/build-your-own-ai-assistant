@@ -8,16 +8,16 @@ A simple JSON-based MCP configuration that automatically routes questions to the
 
 ```mermaid
 flowchart LR
-    A[📝 User Question] --> B{🔍 Keyword Analysis}
-    B -->|travel, trip, plan| C[🌍 phi-fast model]
-    B -->|code, function, debug| D[💻 deepseek-coder model]
-    B -->|explain, what is| E[🔬 mistral model]
-    B -->|no match| F[🎯 default: phi-fast]
+    A["📝 User Question"] --> B{"🔍 Keyword Analysis"}
+    B -->|"travel, trip, plan"| C["🌍 phi-fast model"]
+    B -->|"code, function, debug"| D["💻 deepseek-coder model"]
+    B -->|"explain, what is"| E["🔬 mistral model"]
+    B -->|"no match"| F["🎯 default: phi-fast"]
     
-    C --> G[✅ Travel Response]
-    D --> H[✅ Code Response]
-    E --> I[✅ Knowledge Response]
-    F --> J[✅ General Response]
+    C --> G["✅ Travel Response"]
+    D --> H["✅ Code Response"]
+    E --> I["✅ Knowledge Response"]
+    F --> J["✅ General Response"]
     
     style A fill:#e3f2fd
     style B fill:#f3e5f5
@@ -576,18 +576,18 @@ cat smart_chat.py
 
 ```mermaid
 graph TD
-    A[📝 Incoming Question] --> B{🔍 Contains travel keywords?<br/>trip, plan, visit, vacation}
-    B -->|Yes| C[🌍 Route to phi-fast<br/>Travel Expert]
-    B -->|No| D{💻 Contains coding keywords?<br/>function, code, debug}
-    D -->|Yes| E[💻 Route to deepseek-coder<br/>Programming Expert]
-    D -->|No| F{📚 Contains general keywords?<br/>explain, what is, how to}
-    F -->|Yes| G[🔬 Route to mistral<br/>Knowledge Expert]
-    F -->|No| H[🎯 Default to phi-fast<br/>General Purpose]
+    A["📝 Incoming Question"] --> B{"🔍 Contains travel keywords?<br/>trip, plan, visit, vacation"}
+    B -->|Yes| C["🌍 Route to phi-fast<br/>Travel Expert"]
+    B -->|No| D{"💻 Contains coding keywords?<br/>function, code, debug"}
+    D -->|Yes| E["💻 Route to deepseek-coder<br/>Programming Expert"]
+    D -->|No| F{"📚 Contains general keywords?<br/>explain, what is, how to"}
+    F -->|Yes| G["🔬 Route to mistral<br/>Knowledge Expert"]
+    F -->|No| H["🎯 Default to phi-fast<br/>General Purpose"]
     
-    C --> I[✅ Travel Response]
-    E --> J[✅ Code Response]
-    G --> K[✅ Knowledge Response]
-    H --> L[✅ General Response]
+    C --> I["✅ Travel Response"]
+    E --> J["✅ Code Response"]
+    G --> K["✅ Knowledge Response"]
+    H --> L["✅ General Response"]
     
     style A fill:#e3f2fd
     style B fill:#f3e5f5

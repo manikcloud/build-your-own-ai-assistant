@@ -8,20 +8,20 @@ This repository contains a **complete step-by-step journey** to understand and b
 
 ```mermaid
 graph TB
-    subgraph "🎯 User Interface"
-        A[👤 User Question<br/>Any Topic]
+    subgraph UserInterface["🎯 User Interface"]
+        A["👤 User Question - Any Topic"]
     end
     
-    subgraph "🧠 MCP Intelligence Layer"
-        B[📝 Question Analysis<br/>Keyword Detection]
-        C[🎯 Smart Router<br/>Model Selection]
-        D[⚙️ Configuration<br/>smart-mcp.json]
+    subgraph MCPLayer["🧠 MCP Intelligence Layer"]
+        B["📝 Question Analysis - Keyword Detection"]
+        C["🎯 Smart Router - Model Selection"]
+        D["⚙️ Configuration - smart-mcp.json"]
     end
     
-    subgraph "🤖 AI Model Pool"
-        E[🌍 phi-fast<br/>Travel & General]
-        F[💻 deepseek-coder<br/>Programming]
-        G[🔬 mistral<br/>Knowledge Base]
+    subgraph AIModels["🤖 AI Model Pool"]
+        E["🌍 phi-fast - Travel & General"]
+        F["💻 deepseek-coder - Programming"]
+        G["🔬 mistral - Knowledge Base"]
     end
     
     A --> B
@@ -32,7 +32,7 @@ graph TB
     C --> F
     C --> G
     
-    E --> H[✅ Perfect Response]
+    E --> H["✅ Perfect Response"]
     F --> H
     G --> H
     
@@ -100,19 +100,19 @@ python3 smart_chat.py "Explain what machine learning is"
 
 ```mermaid
 graph TD
-    subgraph "❌ Before MCP - Manual Guessing"
-        A1[👤 User Question] --> B1[🤔 Which AI to use?]
-        B1 --> C1[🎲 Try Random AI]
-        C1 --> D1[🚫 Wrong Answer/Refusal]
-        D1 --> E1[😤 Try Another AI]
-        E1 --> F1[⏰ 10+ Minutes Wasted]
+    subgraph BeforeMCP["❌ Before MCP - Manual Guessing"]
+        A1["👤 User Question"] --> B1["🤔 Which AI to use?"]
+        B1 --> C1["🎲 Try Random AI"]
+        C1 --> D1["🚫 Wrong Answer/Refusal"]
+        D1 --> E1["😤 Try Another AI"]
+        E1 --> F1["⏰ 10+ Minutes Wasted"]
     end
     
-    subgraph "✅ After MCP - Smart Routing"
-        A2[👤 User Question] --> B2[🧠 MCP Analysis]
-        B2 --> C2[🎯 Perfect AI Selected]
-        C2 --> D2[✅ Right Answer]
-        D2 --> E2[😊 30 Seconds, Done!]
+    subgraph AfterMCP["✅ After MCP - Smart Routing"]
+        A2["👤 User Question"] --> B2["🧠 MCP Analysis"]
+        B2 --> C2["🎯 Perfect AI Selected"]
+        C2 --> D2["✅ Right Answer"]
+        D2 --> E2["😊 30 Seconds, Done!"]
     end
     
     style A1 fill:#ffebee

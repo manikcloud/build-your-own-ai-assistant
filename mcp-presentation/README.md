@@ -9,14 +9,14 @@ Open `index.html` in your browser to view the presentation.
 
 ```mermaid
 flowchart TD
-    A[🎯 What is MCP?] --> B[📚 History & Development]
-    B --> C[❌ The Problem] 
-    C --> D[🔧 Traditional Solutions]
-    D --> E[✅ MCP Solution]
-    E --> F[🏗️ Architecture]
-    F --> G[🆚 Agents vs MCP]
-    G --> H[🌍 Real Examples]
-    H --> I[🚀 Future & Benefits]
+    A["🎯 What is MCP?"] --> B["📚 History & Development"]
+    B --> C["❌ The Problem"] 
+    C --> D["🔧 Traditional Solutions"]
+    D --> E["✅ MCP Solution"]
+    E --> F["🏗️ Architecture"]
+    F --> G["🆚 Agents vs MCP"]
+    G --> H["🌍 Real Examples"]
+    H --> I["🚀 Future & Benefits"]
     
     style A fill:#e3f2fd
     style E fill:#e8f5e8
