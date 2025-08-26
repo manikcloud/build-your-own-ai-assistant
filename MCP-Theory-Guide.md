@@ -1,8 +1,5 @@
 # What is MCP? A Simple Guide for Everyone
 
-## 👨‍💻 **About the Author**
-**Varun Kumar Manik** - AWS Community Builder, DevOps Engineer, and AI Trainer with extensive experience in cloud architecture and AI system design. Passionate about making complex AI concepts accessible through hands-on learning experiences. Specializes in bridging the gap between theoretical AI knowledge and practical implementation.
-
 ## 🎯 What is MCP in Simple Words?
 
 **MCP (Model Context Protocol)** is like having a smart helper that knows which AI to ask for different questions. Instead of you guessing which AI is best, MCP picks the right one automatically.
@@ -581,3 +578,8 @@ MCP makes AI simple. Instead of you having to be an AI expert, MCP is the expert
 ---
 
 **Ready to see this in action? Let's try some examples!** 🎯
+
+---
+
+## 👨‍💻 **About the Author**
+**Varun Kumar Manik** - AWS Community Builder, DevOps Engineer, and AI Trainer with extensive experience in cloud architecture and AI system design. Passionate about making complex AI concepts accessible through hands-on learning experiences. Specializes in bridging the gap between theoretical AI knowledge and practical implementation.
