@@ -119,17 +119,17 @@ graph TD
 graph TD
     subgraph "🏢 Food Court (AI World)"
         A["👤 You: I want pizza!"]
-        B["🤵 Smart Helper<br/>(MCP System)"]
+        B["🤵 Smart Helper(MCP System)"]
         
         subgraph "🍕 Food Restaurants (AI Models)"
-            C["🍕 Pizza Place<br/>(Travel AI)"]
-            D["🍣 Sushi Place<br/>(Coding AI)"]
-            E["🍔 Burger Place<br/>(Writing AI)"]
+            C["🍕 Pizza Place(Travel AI)"]
+            D["🍣 Sushi Place(Coding AI)"]
+            E["🍔 Burger Place(Writing AI)"]
         end
     end
     
     A --> B
-    B -->|"Pizza = Travel question<br/>Go to Pizza Place!"| C
+    B -->|"Pizza = Travel questionGo to Pizza Place!"| C
     B -.->|"Wrong for pizza"| D
     B -.->|"Wrong for pizza"| E
     C --> F["😊 Happy with perfect pizza!"]
@@ -331,18 +331,18 @@ Think of MCP like a team of helpers:
 ```mermaid
 graph TD
     subgraph "🏢 MCP Team Headquarters"
-        A["👤 You"] --> B["📱 The Listener<br/>(MCP Client)"]
-        B --> C["🧠 The Smart Decider<br/>(MCP Server)"]
-        C --> D["📋 The Phone Book<br/>(Resource Registry)"]
-        C --> E["🔍 The Question Reader<br/>(Intent Analyzer)"]
-        C --> F["🚦 The Final Chooser<br/>(Router)"]
+        A["👤 You"] --> B["📱 The Listener(MCP Client)"]
+        B --> C["🧠 The Smart Decider(MCP Server)"]
+        C --> D["📋 The Phone Book(Resource Registry)"]
+        C --> E["🔍 The Question Reader(Intent Analyzer)"]
+        C --> F["🚦 The Final Chooser(Router)"]
     end
     
     subgraph "🤖 AI Expert Team"
-        G["💻 Coding AI<br/>Python, JavaScript"]
-        H["🌍 Travel AI<br/>Trip Planning"]
-        I["📚 Writing AI<br/>Stories, Essays"]
-        J["🔬 General AI<br/>Basic Questions"]
+        G["💻 Coding AIPython, JavaScript"]
+        H["🌍 Travel AITrip Planning"]
+        I["📚 Writing AIStories, Essays"]
+        J["🔬 General AIBasic Questions"]
     end
     
     F --> G
@@ -585,13 +585,13 @@ MCP changes AI from "Which AI should I use?" to "Just ask your question and get 
 ```mermaid
 graph LR
     subgraph "🔄 The MCP Transformation"
-        A["❌ Before MCP<br/>Guess which AI<br/>Waste time<br/>Get frustrated"] 
+        A["❌ Before MCPGuess which AIWaste timeGet frustrated"] 
         A --> B["🧠 MCP Magic"]
-        B --> C["✅ After MCP<br/>Just ask question<br/>Get perfect answer<br/>Stay happy"]
+        B --> C["✅ After MCPJust ask questionGet perfect answerStay happy"]
     end
     
     subgraph "🎯 The Result"
-        D["😊 You focus on<br/>your real work<br/>instead of<br/>AI confusion"]
+        D["😊 You focus onyour real workinstead ofAI confusion"]
     end
     
     C --> D

@@ -576,13 +576,13 @@ cat smart_chat.py
 
 ```mermaid
 graph TD
-    A["📝 Incoming Question"] --> B{"🔍 Contains travel keywords?<br/>trip, plan, visit, vacation"}
-    B -->|Yes| C["🌍 Route to phi-fast<br/>Travel Expert"]
-    B -->|No| D{"💻 Contains coding keywords?<br/>function, code, debug"}
-    D -->|Yes| E["💻 Route to deepseek-coder<br/>Programming Expert"]
-    D -->|No| F{"📚 Contains general keywords?<br/>explain, what is, how to"}
-    F -->|Yes| G["🔬 Route to mistral<br/>Knowledge Expert"]
-    F -->|No| H["🎯 Default to phi-fast<br/>General Purpose"]
+    A["📝 Incoming Question"] --> B{"🔍 Contains travel keywords? trip, plan, visit, vacation"}
+    B -->|Yes| C["🌍 Route to phi-fast Travel Expert"]
+    B -->|No| D{"💻 Contains coding keywords? function, code, debug"}
+    D -->|Yes| E["💻 Route to deepseek-coder Programming Expert"]
+    D -->|No| F{"📚 Contains general keywords? explain, what is, how to"}
+    F -->|Yes| G["🔬 Route to mistral Knowledge Expert"]
+    F -->|No| H["🎯 Default to phi-fast General Purpose"]
     
     C --> I["✅ Travel Response"]
     E --> J["✅ Code Response"]
