@@ -6,4 +6,7 @@ This directory contains the presentation materials for the MCP (Model Context Pr
 
 <img width="1903" height="1029" alt="image" src="https://github.com/user-attachments/assets/772eaedd-dc3d-4257-a35c-acb4e4dd652d" />
 
+<img width="1888" height="1014" alt="image" src="https://github.com/user-attachments/assets/2fe629ea-7521-4271-bd82-4961fc5aeab7" />
+
+
 
